@@ -1,0 +1,57 @@
+@media screen and (max-width 600px)
+  .header
+    padding 20px 25px 0 25px !important
+    &__wrapper
+      flex-direction column
+      justify-content center
+    &__logo
+      margin 0 auto 20px auto !important
+    &__list
+      width 100% !important
+
+@media screen and (min-width 600px) and (max-width 1200px)
+  .header
+    padding 20px 25px 0 25px !important
+    &__logo
+      margin-left 50px
+
+.header
+  padding 20px 0 0 0
+  transition .3s padding ease
+  &__wrapper
+    display flex
+    align-items center
+    flex-wrap: wrap
+  &__logo
+    margin-right auto
+    margin-left 25px
+    display flex
+    align-items center
+    height 60px
+    transition margin .3s ease
+  &__logo-text
+    font-size 40px
+    font-weight bold
+    cursor pointer
+    color white
+    text-decoration none !important
+  &__logo-text:hover
+    color white
+  &__list
+    list-style-type none
+    display flex
+    align-items center
+    height 100%
+    width 60%
+    justify-content space-around
+  .list
+    &__item
+      font-size 1.5rem
+      height 100%
+      display flex
+      align-items center
+    &__link
+      text-decoration none
+      transition color .3s ease
+  
+

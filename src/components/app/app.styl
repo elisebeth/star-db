@@ -1,0 +1,38 @@
+*
+  padding 0
+  margin 0
+  box-sizing border-box
+  font-family Lato !important
+
+.container
+  max-width 1280px
+  margin 0 auto
+
+.app
+  display grid
+  justify-content center
+  padding-bottom 75px
+  grid-template-areas "header"\
+                       "random-planet"\
+                       "main"\
+                       "footer"
+
+  grid-template-columns minmax(min-content, 1200px)
+  grid-row-gap 25px
+  grid-column-gap 25px
+
+.main
+  grid-area main
+  display grid
+  grid-template-columns 1fr
+  grid-row-gap 50px
+  justify-items center
+
+.header
+  grid-area header
+
+.random-planet
+  grid-area random-planet
+
+.people-page
+  grid-area item

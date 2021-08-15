@@ -1,0 +1,56 @@
+@media screen and (max-width 600px)
+  .random-planet
+    margin 0 10px
+    &__wrapper
+      width 100% !important
+    &__figure
+      flex-direction column
+      justify-content center
+    &__img
+      margin-bottom 25px
+    &__content
+      margin 0 !important
+    .content
+      &__stats-list
+        margin 0 !important
+    .stats-list
+      &__item
+        text-align center
+
+@media screen and (min-width 600px) and (max-width 1200px)
+  .random-planet
+    margin 0 25px
+    &__wrapper
+      width 100% !important
+
+.random-planet
+  transition .3s margin ease
+  &__wrapper
+    width 100%
+  &__figure
+    display flex
+    align-items center
+    background #2b2a2b
+    padding 25px
+    border-radius 10px
+  &__img
+    display inline-block
+    width 20vh
+    border-radius 10px
+  &__content
+    margin-left 50px
+  .content
+    &__title
+      font-size 5vh
+      font-weight 600
+      margin-bottom 20px
+      text-align center
+    &__stats-list
+      list-style-type none
+      margin-left 10px
+  .stats-list
+    &__item
+      font-size 2.5vh
+      padding 10px
+      border-top 1px solid #ccc
+  
